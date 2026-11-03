@@ -7,6 +7,8 @@ export interface Topic {
   summary: string;
   lawReference: string;
   isPopular: boolean;
+  questionCount: number;
+  updatedAt: string;
 }
 
 export interface TopicsResponse {
@@ -25,6 +27,8 @@ export const MOCK_TOPICS: TopicsResponse = {
         'An employer must give notice before ending a work contract, except in case of serious misconduct.',
       lawReference: 'Law No. 66/2018 regulating labour',
       isPopular: true,
+      questionCount: 8,
+      updatedAt: '2025-02-12',
     },
     {
       id: 2,
@@ -34,6 +38,8 @@ export const MOCK_TOPICS: TopicsResponse = {
         'Steps and documents needed to sell, donate, or inherit registered land in Rwanda.',
       lawReference: 'Law No. 27/2021 governing land',
       isPopular: true,
+      questionCount: 6,
+      updatedAt: '2025-01-28',
     },
     {
       id: 3,
@@ -43,6 +49,8 @@ export const MOCK_TOPICS: TopicsResponse = {
         "Who pays for a child's needs after parents separate, and how amounts are decided by a court.",
       lawReference: 'Law governing persons and family',
       isPopular: false,
+      questionCount: 5,
+      updatedAt: '2025-01-15',
     },
     {
       id: 4,
@@ -52,6 +60,8 @@ export const MOCK_TOPICS: TopicsResponse = {
         'Requirements and steps to register a private limited company or sole proprietorship at RDB.',
       lawReference: 'Law No. 007/2021 governing companies',
       isPopular: true,
+      questionCount: 7,
+      updatedAt: '2025-02-03',
     },
     {
       id: 5,
@@ -61,6 +71,8 @@ export const MOCK_TOPICS: TopicsResponse = {
         'Duration of paid leave an employee is entitled to before and after the birth of a child.',
       lawReference: 'Law No. 66/2018 regulating labour',
       isPopular: false,
+      questionCount: 4,
+      updatedAt: '2024-12-19',
     },
     {
       id: 6,
@@ -70,6 +82,8 @@ export const MOCK_TOPICS: TopicsResponse = {
         'How to report and resolve a boundary dispute or conflicting claim on registered land.',
       lawReference: 'Law No. 27/2021 governing land',
       isPopular: false,
+      questionCount: 6,
+      updatedAt: '2024-12-10',
     },
     {
       id: 7,
@@ -79,6 +93,8 @@ export const MOCK_TOPICS: TopicsResponse = {
         'Documents required and process to register a civil marriage at the local sector office.',
       lawReference: 'Law governing persons and family',
       isPopular: false,
+      questionCount: 5,
+      updatedAt: '2024-11-22',
     },
     {
       id: 8,
@@ -88,6 +104,8 @@ export const MOCK_TOPICS: TopicsResponse = {
         'How and when to renew an operating licence to stay compliant and avoid penalties.',
       lawReference: 'Law No. 007/2021 governing companies',
       isPopular: false,
+      questionCount: 4,
+      updatedAt: '2024-11-08',
     },
     {
       id: 9,
@@ -97,6 +115,8 @@ export const MOCK_TOPICS: TopicsResponse = {
         'When overtime applies, the minimum rate employers must pay, and how to claim unpaid overtime.',
       lawReference: 'Law No. 66/2018 regulating labour',
       isPopular: false,
+      questionCount: 3,
+      updatedAt: '2024-10-25',
     },
     {
       id: 10,
@@ -106,6 +126,8 @@ export const MOCK_TOPICS: TopicsResponse = {
         'Rules for renting farmland, maximum lease durations, and tenant protections under Rwandan law.',
       lawReference: 'Law No. 27/2021 governing land',
       isPopular: false,
+      questionCount: 4,
+      updatedAt: '2024-10-11',
     },
     {
       id: 11,
@@ -115,6 +137,8 @@ export const MOCK_TOPICS: TopicsResponse = {
         'How an estate is divided among surviving relatives when the deceased left no written will.',
       lawReference: 'Law governing persons and family',
       isPopular: true,
+      questionCount: 7,
+      updatedAt: '2024-09-30',
     },
     {
       id: 12,
@@ -124,6 +148,8 @@ export const MOCK_TOPICS: TopicsResponse = {
         'What a valid employment contract must include to be enforceable under Rwandan labour law.',
       lawReference: 'Law No. 66/2018 regulating labour',
       isPopular: false,
+      questionCount: 5,
+      updatedAt: '2024-09-12',
     },
   ],
 };
